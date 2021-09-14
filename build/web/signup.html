@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VDM Shoes Store</title>
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css"> 
+        <link rel="stylesheet" href="./css/style-admin.css"/>
+        <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="icon" href="./assets/img/title-logo.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        
+    </head>
+<body>
+    <div class="all-container sign-container">
+        <div class="container-wrap d-flex">
+           <div class="sign-header text-center">
+               <h3>SIGN UP</h3>
+               <form action="#">
+                <div class="login-form">
+                    <div class="login-form-email">
+                        <i class="login-form-email-icon fas fa-portrait"></i>
+                        <input class="login-form-email-input" type="text" name="userID" id="login" placeholder="User ID" required>
+                    </div>
+                    <div class="login-form-email">
+                     <i class="login-form-email-icon fas fa-envelope"></i>
+                     <input class="login-form-email-input" type="email" name="email" id="login" placeholder="Email" required>
+                    </div>
+                    <div class="login-form-email">
+                        <i class="login-form-email-icon fas fa-lock "></i>
+                        <input id="signup-form-password" class="login-form-email-input" type="password" name="password" id="login" placeholder="Password" required>
+                    </div>
+                    <div class="login-form-email re-pass">
+                        <i class="login-form-email-icon fas fa-lock "></i>
+                        <input id="signup-form-confirm" class="login-form-email-input" type="password" id="login" placeholder="Verify Password" required>
+                    </div>  
+                    <p id="check-password" style="display: none">Two passwords not same!!!</p>
+                    <div id="signup-form-btn" class="login-form-button">
+                        <button id="signup-btn" type="submit">SIGN UP</button>
+                    </div>
+                </div>
+               </form>
+               <div class="login-form-forgot">
+                   <a href="login.html"><span>Already Have An Account? </span>Login</a>
+               </div>
+               <div class="login-form-account">
+                   <a href="signup.html">Create Your Account <span class="ti-arrow-right"></span></a>
+               </div>
+           </div>
+        </div>
+    </div>
+    
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="./assets/js/loader.js"></script>
+    <script>
+        document.getElementById("signup-form-confirm").addEventListener("input", () => {
+            let password = document.getElementById("signup-form-password").value;
+            let confirm = document.getElementById("signup-form-confirm").value;
+            
+            if (password !== confirm) {
+                document.getElementById("check-password").style.display = "block";
+                document.getElementById("signup-btn").disabled = true;
+                document.getElementById("signup-btn").style.cursor = "not-allowed";
+                document.getElementById("signup-btn").style.backgroundColor = 'rgb(' + 240 + ',' + 136 + ',' + 118 + ')';
+                document.getElementById("signup-btn").style.color = "white";
+            }
+        })
+        
+        document.getElementById("signup-form-confirm").addEventListener("input", () => {
+            let password = document.getElementById("signup-form-password").value;
+            let confirm = document.getElementById("signup-form-confirm").value;
+            
+            if (password === confirm) {
+                document.getElementById("check-password").style.display = "none";
+                document.getElementById("signup-btn").disabled = false;
+                document.getElementById("signup-btn").style.cursor = "pointer";
+            }
+        })
+    </script>
+</body>
+</html>
