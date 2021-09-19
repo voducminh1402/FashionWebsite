@@ -1653,7 +1653,7 @@ ol {
 
 .product__details__pic__left {
 	width: 22%;
-	max-height: 574px;
+	height: 620px;
 	float: left;
 	overflow-y: auto;
 }
@@ -1688,7 +1688,9 @@ ol {
 }
 
 .product__details__pic__left .pt img {
-	min-width: 100%;
+	width: 150px;
+        height: 140px;
+        object-fit: cover;
 }
 
 .product__details__slider__content {
@@ -1814,6 +1816,11 @@ ol {
 	height: 48px;
 }
 
+.product-add-btn-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .product__details__button {
 	overflow: hidden;
 	margin-bottom: 25px;
@@ -1892,11 +1899,9 @@ ol {
 
 .product__details__widget ul li .stock__checkbox label {
 	display: block;
-	padding-left: 20px;
 	font-size: 14px;
 	color: #666666;
 	position: relative;
-	cursor: pointer;
 }
 
 .product__details__widget ul li .stock__checkbox label input {
@@ -2029,6 +2034,10 @@ ol {
 .product__details__tab {
 	padding-top: 80px;
 	margin-bottom: 65px;
+}
+
+.product__big__img {
+    width: 600px !important;
 }
 
 .nav {

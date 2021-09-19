@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>web/product-details.jsp</url>
+            <bookmark id="1">
+                <name/>
+                <line>53</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/nbproject/build-impl.xml</file>
+            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/web/css/style.css</file>
+            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/web/shop-cart.jsp</file>
             <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/web/WEB-INF/web.xml</file>
+            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/web/product-details.jsp</file>
             <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/src/java/fashionweb/product/ProductDAO.java</file>
-            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/web/META-INF/context.xml</file>
-            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/src/java/fashionweb/controller/MainController.java</file>
-            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/web/index.jsp</file>
             <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/web/shop.jsp</file>
             <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/src/java/fashionweb/controller/DetailProductController.java</file>
-            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/src/java/fashionweb/product/ProductDTO.java</file>
+            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/src/java/fashionweb/controller/GetProductController.java</file>
+            <file>file:/D:/FPT%20University/CN4/PRJ301/PRJ%20Code/Self-learning/FashionWebite/src/java/fashionweb/controller/SearchProductController.java</file>
         </group>
     </open-files>
 </project-private>

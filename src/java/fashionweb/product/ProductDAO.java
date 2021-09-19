@@ -463,7 +463,7 @@ public class ProductDAO {
                     String productImage = rs.getString("productImage");
                     String availableStatus = rs.getString("availableStatus");
                     
-                    product = new ProductDTO(productID, categoryID, productName, price, categoryID, description, productImage, productImage, categoryID, availableStatus, availableStatus)
+                    product = new ProductDTO(productID, categoryID, productName, price, discount, description, productImage, "", 0, availableStatus, "");
                     
                 }
                 

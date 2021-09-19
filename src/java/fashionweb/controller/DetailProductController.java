@@ -5,6 +5,8 @@
  */
 package fashionweb.controller;
 
+import fashionweb.product.ProductDAO;
+import fashionweb.product.ProductDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -26,12 +28,21 @@ public class DetailProductController extends HttpServlet {
         String url = ERROR;
         
         try {
+            String productID = request.getParameter("id");
             
+            ProductDAO dao = new ProductDAO();
+            ProductDTO product = dao.getDetailProduct(productID);
+        
+            if (product != null) {
+                request.setAttribute("PRODUCT_DETAIL", product);
+                url = SUCCESS;
+            }
         } 
         catch (Exception e) {
+            log("Error at DetailProductController: " + e.toString());
         }
         finally {
-            
+            request.getRequestDispatcher(url).forward(request, response);
         }
     }
 
