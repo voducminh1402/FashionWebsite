@@ -37,7 +37,9 @@
             <li><a href="shop-cart.jsp"><span class="icon_bag_alt"></span>
                     <%
                         Cart cart = (Cart) session.getAttribute("CART");
+                        int cartSize;
                         if (cart != null) {
+                            cartSize = cart.getCart().size();
                     %>
                         <div class="tip"><%= cart.getCart().size() %></div>
                     <%
@@ -113,7 +115,19 @@
                                 <div class="tip">2</div>
                             </a></li>
                             <li><a href="shop-cart.jsp"><span class="icon_bag_alt"></span>
-                                <div class="tip">2</div>
+                                
+                                <%
+                                    if (cart != null) {
+                                %>        
+                                    <div class="tip"><%= cart.getCart().size() %></div>
+                                <%
+                                    }
+                                    else {
+                                %>
+                                    <div class="tip">0</div>
+                                <%
+                                    }
+                                %>
                             </a></li>
                         </ul>
                     </div>
