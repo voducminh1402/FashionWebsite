@@ -72,6 +72,10 @@
         <servlet-name>DetailProductController</servlet-name>
         <servlet-class>fashionweb.controller.DetailProductController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CheckoutConfirmController</servlet-name>
+        <servlet-class>fashionweb.controller.CheckoutConfirmController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MainController</servlet-name>
         <url-pattern>/MainController</url-pattern>
@@ -143,6 +147,10 @@
     <servlet-mapping>
         <servlet-name>DetailProductController</servlet-name>
         <url-pattern>/DetailProductController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutConfirmController</servlet-name>
+        <url-pattern>/CheckoutConfirmController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -34,6 +34,7 @@ public class MainController extends HttpServlet {
     private static final String EDIT_PRODUCT = "EditProductController";
     private static final String DELETE_PRODUCT = "DeleteProductController";
     private static final String DETAIL_PRODUCT = "DetailProductController";
+    private static final String CHECKOUT_CONFIRM = "CheckoutConfirmController";
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -82,6 +83,9 @@ public class MainController extends HttpServlet {
             }
             else if ("Detail Product".equals(action)) {
                 url = DETAIL_PRODUCT;
+            }
+            else if ("Checkout Confirm".equals(action)) {
+                url = CHECKOUT_CONFIRM;
             }
             else {
                 HttpSession session = request.getSession();

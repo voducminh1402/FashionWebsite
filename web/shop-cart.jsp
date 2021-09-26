@@ -153,7 +153,7 @@
                             <li>Subtotal <span>$ <%= Math.round(totalMoney * 100.00) / 100.00 %></span></li>
                             <li>Total <span>$ <%= Math.round(totalMoney * 100.00) / 100.00 %></span></li>
                         </ul>
-                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                        <a href="checkout.jsp" class="primary-btn">Proceed to checkout</a>
                     </div>
                     <%
                         }

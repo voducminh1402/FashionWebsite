@@ -1818,7 +1818,7 @@ ol {
 
 .product-add-btn-disabled {
     pointer-events: none;
-    cursor: not-allowed;
+    cursor: not-allowed ;
 }
 
 .product__details__button {

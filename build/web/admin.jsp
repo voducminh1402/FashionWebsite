@@ -10,6 +10,8 @@
 <%@page import="java.util.List"%>
 <%@page import="fashionweb.user.UserDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,7 +31,6 @@
 
     </head>
     <body>
-        
         <div class="container-xl">
             <div class="table-responsive">
                 <div class="table-wrapper">
