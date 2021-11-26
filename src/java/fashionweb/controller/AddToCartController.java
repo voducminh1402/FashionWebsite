@@ -23,7 +23,8 @@ import javax.servlet.http.HttpSession;
 public class AddToCartController extends HttpServlet {
     private static final String ERROR = "error.jsp";
     private static final String SUCCESS = "shop.jsp";
-            
+    private static final String SEARCH_PAGE = "search.jsp";
+    
    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -40,7 +41,6 @@ public class AddToCartController extends HttpServlet {
             String productImage = getProduct.getProductImage();
             Double productPrice = getProduct.getPrice();
             int quantity = 1;
-            
             
             Product product = new Product(productID, productName, productImage, productPrice, quantity);
             

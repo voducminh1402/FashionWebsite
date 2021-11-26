@@ -54,10 +54,8 @@ public class Cart {
         if (this.cart == null) {
             return;
         }
-        else {
-            if(this.cart.containsKey(id)) {
-                this.cart.remove(id);
-            }
+        if(this.cart.containsKey(id)) {
+            this.cart.remove(id);
         }
     }
 }

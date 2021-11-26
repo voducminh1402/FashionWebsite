@@ -106,7 +106,6 @@
                                                 <button type="submit" name="action" value="Modify Cart" class="inc qtybtn cart-button">+</button>
                                             </div>
                                             <input type="hidden" name="id" value="<%= product.getProductID() %>">
-                                            <!--<input type="hidden" name="action" value="Modify Cart">-->
                                     </td>
                                     <td class="cart__total">$ <%= Math.round(product.getProductPrice() * product.getQuantity() * 100.00) / 100.00 %></td>
                                     <td class="cart__close">
